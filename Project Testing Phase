@@ -1,1 +1,93 @@
 Project Testing Phase
+EduGenie: Google Gemini Powered Learning Assistant
+
+Project Testing Phase
+
+The Testing Phase of the EduGenie project focuses on checking whether the learning assistant works correctly, reliably, and according to the requirements. Different testing methods are used to identify errors and improve the overall performance of the system.
+
+1. Testing Objectives
+
+Verify that all EduGenie features work correctly.
+
+Check the accuracy of Gemini-generated answers.
+
+Ensure user questions are processed properly.
+
+Identify and fix errors or bugs.
+
+Check the system’s response speed and usability.
+
+Ensure the application is easy and safe for students to use.
+
+
+2. Types of Testing
+
+1. Unit Testing
+Individual modules such as login, question input, Gemini API connection, and answer generation are tested separately.
+
+2. Integration Testing
+Checks whether different modules work together correctly, especially the connection between the application and Google Gemini API.
+
+3. Functional Testing
+Verifies important functions such as:
+
+Entering questions
+
+Generating answers
+
+Explaining difficult topics
+
+Summarizing content
+
+Generating study materials
+
+Handling invalid inputs
+
+
+4. Performance Testing
+Checks response time, system speed, and performance when multiple questions are submitted.
+
+5. Usability Testing
+Checks whether students can easily understand and use the EduGenie interface.
+
+6. Error Testing
+Tests how the system behaves when there is no internet connection, an invalid input, or an API error.
+
+3. Sample Test Cases
+
+Test Case	Input/Action	Expected Result
+
+TC01	Open EduGenie	Application opens successfully
+TC02	Enter a valid question	Relevant answer is generated
+TC03	Enter an empty question	System displays a suitable message
+TC04	Ask for a topic explanation	Simple explanation is provided
+TC05	Request a summary	Short and relevant summary is generated
+TC06	Internet disconnected	Appropriate error message is shown
+TC07	Multiple questions	System processes questions correctly
+TC08	Invalid input	System handles it without crashing
+
+
+4. Bug Identification and Fixing
+
+During testing, errors are recorded and analyzed. Developers correct problems related to the user interface, API connection, input validation, response generation, and system performance. The application is tested again after fixing each major issue.
+
+5. Testing Result
+
+After completing the testing phase, EduGenie should:
+
+Generate appropriate learning responses.
+
+Process user questions correctly.
+
+Handle errors without crashing.
+
+Provide a simple and user-friendly interface.
+
+Communicate successfully with the Gemini API.
+
+Work efficiently under normal usage conditions.
+
+
+6. Conclusion
+
+The Testing Phase ensures that EduGenie is reliable, functional, and user-friendly. By performing different types of testing and correcting identified errors, the system can be prepared for the final deployment and implementation phase.
