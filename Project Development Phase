@@ -1,1 +1,315 @@
 Project Development Phase
+EduGenie: Google Gemini Powered Learning Assistant
+
+Project Development Phase
+
+1. Introduction
+
+The Development Phase is the stage where the proposed EduGenie – Google Gemini Powered Learning Assistant is converted from a design into a working application. In this phase, the frontend, backend, database, and Gemini AI integration are developed and connected.
+
+EduGenie is designed to help students understand lessons, ask questions, generate summaries, create study materials, and receive personalized learning assistance using Google Gemini AI.
+
+
+---
+
+2. Objectives of Development
+
+The main objectives are:
+
+To develop a simple and user-friendly learning interface.
+
+To integrate Google Gemini AI for intelligent responses.
+
+To allow students to ask academic questions.
+
+To generate summaries and explanations.
+
+To provide personalized learning assistance.
+
+To store relevant student and learning information.
+
+To test the application for accuracy and usability.
+
+
+
+---
+
+3. Technologies Used
+
+Component	Technology
+
+Frontend	HTML, CSS, JavaScript
+Backend	Python
+AI Model	Google Gemini API
+Database	MySQL / SQLite
+Development Environment	VS Code
+Version Control	Git & GitHub
+
+
+
+---
+
+4. Development Process
+
+Step 1: Frontend Development
+
+The user interface is developed first. It contains:
+
+Login/Register page
+
+Home/Dashboard
+
+AI Chat interface
+
+Study material section
+
+Summary generator
+
+Quiz section
+
+Profile section
+
+
+The interface is designed to be simple so that students can easily access different learning features.
+
+
+---
+
+Step 2: Backend Development
+
+The backend handles the main application logic.
+
+It is responsible for:
+
+Processing user requests
+
+Connecting the frontend with the Gemini API
+
+Managing user information
+
+Processing learning content
+
+Sending AI-generated responses to the user
+
+Handling errors and authentication
+
+
+Python can be used to create the backend because it provides simple integration with AI services.
+
+
+---
+
+Step 3: Gemini AI Integration
+
+The Google Gemini API is integrated into EduGenie to provide AI-powered learning assistance.
+
+Basic workflow:
+
+Student enters question
+        ↓
+EduGenie Frontend
+        ↓
+Backend
+        ↓
+Google Gemini API
+        ↓
+AI processes the question
+        ↓
+Response returned to Backend
+        ↓
+Response displayed to Student
+
+For example:
+
+Student:
+"What is normalization in DBMS?"
+
+EduGenie:
+"Normalization is a database design technique used to organize data and reduce data redundancy."
+
+The system can also provide longer explanations when required.
+
+
+---
+
+5. Database Development
+
+A database is created to store necessary application information.
+
+Possible tables include:
+
+User Table
+
+User ID
+
+Name
+
+Email
+
+Password
+
+Course
+
+
+Chat History Table
+
+Chat ID
+
+User ID
+
+Question
+
+AI Response
+
+Date and Time
+
+
+Study Material Table
+
+Material ID
+
+User ID
+
+Subject
+
+Topic
+
+Content
+
+
+The database helps maintain user information and learning history.
+
+
+---
+
+6. Main Features Developed
+
+1. AI Chat Assistant
+
+Students can ask questions and receive AI-generated explanations.
+
+2. Topic Explanation
+
+EduGenie can explain difficult topics in simple language.
+
+3. Summarization
+
+Long study material can be converted into short and understandable notes.
+
+4. Quiz Generation
+
+The system can generate questions based on a selected topic.
+
+5. Study Assistance
+
+Students can use the assistant for revision, examples, and concept clarification.
+
+6. Chat History
+
+Previous questions and responses can be stored for future reference.
+
+
+---
+
+7. Sample Development Code
+
+A simplified Python example for connecting an application to Gemini could follow this structure:
+
+from google import genai
+
+client = genai.Client(api_key="YOUR_API_KEY")
+
+question = input("Ask your question: ")
+
+response = client.models.generate_content(
+    model="gemini-2.5-flash",
+    contents=question
+)
+
+print(response.text)
+
+The actual project should keep the API key securely stored rather than exposing it directly in source code.
+
+
+---
+
+8. Testing During Development
+
+Different modules are tested individually and then together.
+
+Unit Testing
+
+Each function is tested separately.
+
+Integration Testing
+
+Frontend, backend, database, and Gemini API are tested together.
+
+Functional Testing
+
+Features such as login, chat, summarization, and quiz generation are checked.
+
+User Interface Testing
+
+The application is checked on different screen sizes and devices.
+
+Error Testing
+
+Invalid inputs, API errors, and connection problems are tested.
+
+
+---
+
+9. Development Challenges
+
+Some possible challenges include:
+
+Connecting the application correctly with the Gemini API.
+
+Handling API errors and network failures.
+
+Maintaining secure API credentials.
+
+Designing suitable prompts for educational responses.
+
+Managing database records.
+
+Making the interface easy for students to use.
+
+Preventing incorrect or misleading AI-generated information.
+
+
+
+---
+
+10. Expected Output
+
+After completing the Development Phase, EduGenie should provide:
+
+EDU GENIE
+                  │
+        ┌─────────┴─────────┐
+        │                   │
+    Student Login       Registration
+        │
+        ↓
+     Dashboard
+        │
+ ┌──────┼────────┬──────────┐
+ │      │        │          │
+Chat  Summary   Quiz   Study Materials
+ │      │        │          │
+ └──────┴────────┴──────────┘
+             │
+             ↓
+        Gemini AI
+             │
+             ↓
+     Learning Response
+
+
+---
+
+11. Conclusion
+
+The Development Phase transforms the EduGenie project design into a functional learning application. The frontend, backend, database, and Google Gemini AI are integrated to create an interactive educational assistant. After development and testing, EduGenie can provide students with AI-based explanations, summaries, quizzes, and personalized study support.
