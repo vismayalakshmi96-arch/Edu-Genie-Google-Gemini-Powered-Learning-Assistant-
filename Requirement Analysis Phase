@@ -1,1 +1,185 @@
 Requirement Analysis Phase
+EduGenie: Google Gemini Powered Learning Assistant
+
+Requirement Analysis Phase
+
+1. Introduction
+
+EduGenie is an AI-powered learning assistant that uses Google Gemini to help students understand academic topics, solve doubts, summarize study materials, and prepare for examinations. The Requirement Analysis Phase identifies what the system should do and what users need from it.
+
+2. Problem Statement
+
+Students often face difficulties in:
+
+Understanding complex topics.
+
+Getting quick answers to academic doubts.
+
+Finding useful study materials.
+
+Preparing notes and summaries.
+
+Revising before examinations.
+
+
+EduGenie aims to provide a single, intelligent learning platform that gives personalized and easy-to-understand academic assistance.
+
+3. Objectives
+
+The main objectives are:
+
+1. Provide AI-based answers to students' questions.
+
+
+2. Explain difficult concepts in simple language.
+
+
+3. Generate summaries and study notes.
+
+
+4. Help students prepare for examinations.
+
+
+5. Provide personalized learning assistance.
+
+
+6. Reduce the time required to search for learning resources.
+
+
+7. Make learning interactive and accessible.
+
+
+
+4. Stakeholders
+
+The main stakeholders are:
+
+Students – primary users of the system.
+
+Teachers/Faculty – can use it as a supplementary teaching tool.
+
+Administrators – manage the system and users.
+
+Developers – design, develop, and maintain EduGenie.
+
+Google Gemini API – provides AI-powered responses.
+
+
+5. Functional Requirements
+
+Requirement	Description
+
+User Registration/Login	Students can create accounts and securely log in.
+AI Chat	Users can ask academic questions and receive answers.
+Concept Explanation	Gemini explains topics according to the student's level.
+Summarization	Converts lengthy study material into short notes.
+Question Generation	Generates practice questions and quizzes.
+Exam Preparation	Helps students revise important topics.
+Answer Generation	Provides explanations and solutions to academic questions.
+Chat History	Stores previous conversations for later reference.
+Feedback	Users can provide feedback about responses.
+
+
+6. Non-Functional Requirements
+
+Performance: Responses should be generated quickly.
+
+Usability: The interface should be simple and student-friendly.
+
+Security: User information should be protected.
+
+Reliability: The system should provide consistent service.
+
+Scalability: The system should support increasing numbers of users.
+
+Availability: The application should be accessible whenever students need it.
+
+Maintainability: The system should be easy to update and maintain.
+
+
+7. Hardware Requirements
+
+Smartphone, tablet, or computer
+
+Minimum 4 GB RAM
+
+Internet connection
+
+Keyboard/touchscreen for user interaction
+
+
+8. Software Requirements
+
+Operating System: Windows/Android/Linux
+
+Frontend: HTML, CSS, JavaScript or suitable framework
+
+Backend: Python/Node.js or suitable technology
+
+Database: MySQL/Firebase or similar database
+
+AI Service: Google Gemini API
+
+Web Browser: Chrome, Edge, Firefox, etc.
+
+
+9. User Requirements
+
+The student should be able to:
+
+Register and log in.
+
+Ask questions using natural language.
+
+Receive simple explanations.
+
+Generate notes and summaries.
+
+Practice questions and quizzes.
+
+Review previous conversations.
+
+Use the system through a simple interface.
+
+
+10. System Requirements
+
+EduGenie should:
+
+Accept user questions.
+
+Send appropriate requests to the Gemini AI service.
+
+Process and display AI-generated responses.
+
+Store relevant user and chat information securely.
+
+Handle errors such as network failure or unavailable AI services.
+
+Provide an easy-to-use interface.
+
+
+11. Use Case Overview
+
+Student → EduGenie
+
+Register/Login
+
+Ask Question
+
+Get Explanation
+
+Generate Summary
+
+Generate Quiz
+
+Prepare for Exam
+
+View Chat History
+
+Give Feedback
+
+
+12. Expected Outcome
+
+The final system should provide students with an interactive, personalized, and AI-powered learning assistant. EduGenie will make learning easier by combining conversational AI, study support, summaries, quizzes, and exam preparation in one platform.
