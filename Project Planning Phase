@@ -1,1 +1,197 @@
 Project Planning Phase
+EduGenie: Google Gemini Powered Learning Assistant
+
+Project Planning Phase
+
+1. Introduction
+
+EduGenie is an AI-powered learning assistant designed to help students learn subjects easily and effectively. It uses Google Gemini to provide personalized explanations, answer questions, summarize study materials, generate quizzes, and assist students with their academic work.
+
+The Project Planning Phase focuses on deciding what needs to be developed, how it will be developed, who will work on each task, and when each task will be completed.
+
+
+---
+
+2. Project Objectives
+
+The main objectives of EduGenie are:
+
+To provide an AI-based personal learning assistant.
+
+To answer students' questions quickly and clearly.
+
+To explain difficult topics in simple language.
+
+To generate summaries and notes from study materials.
+
+To create practice questions and quizzes.
+
+To provide personalized learning support based on the student's needs.
+
+To reduce the time required to search for educational information.
+
+To make learning more interactive and accessible.
+
+
+
+---
+
+3. Project Scope
+
+The EduGenie project will include the following features:
+
+Module	Description
+
+User Interface	Simple interface for students to interact with EduGenie
+AI Chat Assistant	Answers academic questions using Gemini
+Topic Explanation	Explains difficult concepts in simple terms
+Summarization	Converts lengthy study materials into short notes
+Quiz Generator	Creates questions for practice
+Study Assistance	Helps students prepare for examinations
+Personalized Learning	Provides responses according to the student's learning needs
+Feedback	Allows users to provide feedback about the system
+
+
+
+---
+
+4. Technology Planning
+
+The proposed technologies are:
+
+Frontend: HTML, CSS, JavaScript
+
+Backend: Python
+
+AI Model: Google Gemini API
+
+Database: MySQL / SQLite
+
+Development Environment: Visual Studio Code
+
+Version Control: Git and GitHub
+
+API: Gemini API
+
+
+
+---
+
+5. Project Team Planning
+
+Team Member/Role	Responsibility
+
+Project Leader	Overall project coordination
+Frontend Developer	Design and develop user interface
+Backend Developer	Develop server-side functionality
+AI/API Developer	Integrate Google Gemini API
+Database Developer	Design and manage database
+Tester	Test the application and identify errors
+Documentation Member	Prepare project reports and documentation
+
+
+For an individual project, one student can perform all these roles.
+
+
+---
+
+6. Project Work Breakdown Structure
+
+The project can be divided into the following stages:
+
+1. Project Planning
+↓
+2. Requirement Analysis
+↓
+3. System Design
+↓
+4. UI/UX Design
+↓
+5. Backend Development
+↓
+6. Gemini API Integration
+↓
+7. Database Development
+↓
+8. Testing
+↓
+9. Deployment
+↓
+10. Documentation & Presentation
+
+
+---
+
+7. Project Schedule
+
+Phase	Activities	Duration
+
+Planning	Objectives, scope, team roles	Week 1
+Requirement Analysis	Identify functional and non-functional requirements	Week 1
+Design	System architecture, database and UI design	Week 2
+Development	Frontend and backend development	Week 3–4
+AI Integration	Integrate Google Gemini API	Week 4
+Testing	Functional and performance testing	Week 5
+Deployment	Deploy the completed application	Week 6
+Documentation	Report and presentation preparation	Week 6
+
+
+
+---
+
+8. Resource Planning
+
+The project requires:
+
+Hardware
+
+Computer/Laptop
+
+Internet connection
+
+
+Software
+
+Visual Studio Code
+
+Python
+
+Web browser
+
+MySQL/SQLite
+
+Git/GitHub
+
+
+Services
+
+Google Gemini API
+
+Hosting/deployment platform, if required
+
+
+
+---
+
+9. Risk Planning
+
+Risk	Solution
+
+Gemini API failure	Provide error handling and retry mechanisms
+Internet connection problems	Display suitable error messages
+Incorrect AI responses	Encourage verification and provide educational context
+Data loss	Maintain regular database backups
+Security issues	Protect API keys and user data
+Development delays	Divide work into smaller tasks and monitor progress
+
+
+
+---
+
+10. Expected Outcome
+
+At the end of the project, EduGenie is expected to provide a simple, intelligent, and interactive learning platform where students can ask questions, understand difficult concepts, generate summaries and quizzes, and receive AI-based academic assistance.
+
+11. Conclusion
+
+The Project Planning Phase establishes a clear roadmap for developing EduGenie. By defining the objectives, scope, technologies, team responsibilities, schedule, resources, and risks, the development process can be carried out in an organized and systematic manner. EduGenie aims to make learning simpler, faster, personalized, and more engaging for students.
