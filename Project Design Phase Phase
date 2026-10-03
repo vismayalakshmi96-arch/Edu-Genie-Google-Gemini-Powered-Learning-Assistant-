@@ -1,1 +1,457 @@
 Project Design Phase Phase
+EduGenie: Google Gemini Powered Learning Assistant
+
+Project Design Phase
+
+1. Introduction
+
+EduGenie is an AI-powered learning assistant designed to help students learn subjects in a simple, interactive, and personalized way. It uses Google Gemini to understand students' questions and provide explanations, examples, summaries, study materials, and learning support.
+
+The Project Design Phase converts the requirements identified in the Requirement Analysis Phase into a clear technical and functional design for the EduGenie system.
+
+
+---
+
+2. Design Objectives
+
+The main objectives of EduGenie are:
+
+To provide personalized learning assistance.
+
+To answer students' questions using AI.
+
+To explain difficult topics in simple language.
+
+To generate summaries and study notes.
+
+To provide examples for better understanding.
+
+To support different subjects and learning levels.
+
+To provide an easy-to-use interface.
+
+To use Google Gemini for intelligent responses.
+
+
+
+---
+
+3. System Architecture
+
+The EduGenie system can be divided into the following major components:
+
+┌─────────────────────┐
+                 │       Student       │
+                 └──────────┬──────────┘
+                            │
+                            ▼
+                 ┌─────────────────────┐
+                 │    User Interface   │
+                 │   Web / Mobile UI   │
+                 └──────────┬──────────┘
+                            │
+                            ▼
+                 ┌─────────────────────┐
+                 │   Backend Server    │
+                 │ Authentication      │
+                 │ Request Processing  │
+                 └──────────┬──────────┘
+                            │
+                            ▼
+                 ┌─────────────────────┐
+                 │   Gemini API        │
+                 │   Google Gemini AI  │
+                 └──────────┬──────────┘
+                            │
+                            ▼
+                 ┌─────────────────────┐
+                 │ AI Generated        │
+                 │ Learning Response   │
+                 └──────────┬──────────┘
+                            │
+                            ▼
+                 ┌─────────────────────┐
+                 │       Student       │
+                 └─────────────────────┘
+
+
+---
+
+4. Module Design
+
+Module 1: User Registration and Login
+
+This module manages student accounts.
+
+Functions:
+
+Student registration
+
+Login and logout
+
+User authentication
+
+Profile management
+
+
+
+---
+
+Module 2: AI Chat Assistant
+
+This is the main module of EduGenie.
+
+Students can enter questions such as:
+
+> "Explain normalization in DBMS."
+
+
+
+Gemini processes the question and generates an understandable response.
+
+Features:
+
+Question answering
+
+Concept explanation
+
+Examples
+
+Follow-up questions
+
+Simple explanations
+
+
+
+---
+
+Module 3: Study Material Generator
+
+This module helps students create learning materials.
+
+It can generate:
+
+Short notes
+
+Topic summaries
+
+Important points
+
+Definitions
+
+Examples
+
+Revision materials
+
+
+
+---
+
+Module 4: Personalized Learning
+
+EduGenie can adapt explanations according to the student's requirements.
+
+For example:
+
+Student → "Explain recursion in simple words."
+
+EduGenie → Simple explanation
+         → Example
+         → Small program
+         → Key points
+
+Students can also request different explanation levels such as basic, intermediate, or detailed.
+
+
+---
+
+Module 5: Quiz Generator
+
+The quiz module can generate questions based on a selected topic.
+
+Example:
+
+Topic: Data Structures
+
+Q1. Which data structure follows LIFO?
+A) Queue
+B) Stack
+C) Tree
+D) Graph
+
+The system can provide answers and explanations after the quiz.
+
+
+---
+
+Module 6: Progress Tracking
+
+This module records learning activities such as:
+
+Topics studied
+
+Quizzes attempted
+
+Quiz scores
+
+Frequently studied subjects
+
+Learning history
+
+
+This information can be used to provide more personalized learning support.
+
+
+---
+
+5. User Interface Design
+
+The main interface can contain:
+
+Home Page
+
+┌─────────────────────────────────┐
+│          EDU GENIE              │
+│  Your AI-Powered Learning Buddy │
+├─────────────────────────────────┤
+│                                 │
+│  🔍 Ask anything about learning │
+│                                 │
+│  [ Type your question here... ] │
+│                                 │
+│       [ Ask Gemini ]            │
+│                                 │
+├─────────────────────────────────┤
+│  Study Notes | Quiz | Summary   │
+└─────────────────────────────────┘
+
+Main Navigation
+
+Home
+
+AI Tutor
+
+Study Notes
+
+Quiz
+
+Progress
+
+Profile
+
+
+
+---
+
+6. Database Design
+
+A database can be used to store student and learning information.
+
+User Table
+
+Field	Description
+
+User_ID	Unique student ID
+Name	Student name
+Email	Student email
+Password	Login password
+Course	Student course
+
+
+Chat History Table
+
+Field	Description
+
+Chat_ID	Unique chat ID
+User_ID	Student ID
+Question	Student question
+Response	Gemini response
+Date_Time	Date and time
+
+
+Quiz Table
+
+Field	Description
+
+Quiz_ID	Unique quiz ID
+User_ID	Student ID
+Topic	Quiz topic
+Score	Obtained score
+Date	Quiz date
+
+
+
+---
+
+7. Data Flow Design
+
+The basic data flow is:
+
+Student enters question
+          ↓
+Frontend receives question
+          ↓
+Backend validates request
+          ↓
+Question sent to Gemini API
+          ↓
+Gemini processes the question
+          ↓
+AI response returned
+          ↓
+Backend sends response
+          ↓
+Response displayed to student
+
+
+---
+
+8. Technology Design
+
+Component	Technology
+
+Frontend	HTML, CSS, JavaScript / React
+Backend	Python / Node.js
+AI Model	Google Gemini
+API	Gemini API
+Database	MySQL / Firebase
+Development Tool	VS Code
+Version Control	GitHub
+
+
+The exact technology stack can be adjusted according to the project implementation requirements.
+
+
+---
+
+9. AI Interaction Design
+
+EduGenie sends the student's request to Gemini with appropriate instructions.
+
+Example
+
+Input:
+
+> Explain DBMS normalization for a beginner.
+
+
+
+Processing:
+
+Student Question
+       ↓
+Prompt Preparation
+       ↓
+Gemini API
+       ↓
+Response Generation
+       ↓
+Response Formatting
+
+Output:
+
+> Normalization is a process of organizing data in a database to reduce duplication and improve data consistency.
+
+
+
+The response can then include examples and important points.
+
+
+---
+
+10. Security Design
+
+The system should include:
+
+Secure user authentication
+
+Password protection
+
+Input validation
+
+API key protection
+
+Secure database access
+
+User data privacy
+
+Session management
+
+
+The Gemini API key should not be exposed directly in frontend code.
+
+
+---
+
+11. Error Handling
+
+EduGenie should handle common errors such as:
+
+Error	System Response
+
+Empty question	"Please enter a question."
+Internet failure	"Unable to connect. Please try again."
+API error	"AI service is temporarily unavailable."
+Invalid login	"Incorrect email or password."
+Server error	"Something went wrong. Please try again."
+
+
+
+---
+
+12. Overall System Workflow
+
+START
+               ↓
+        Student Login
+               ↓
+        Open EduGenie
+               ↓
+        Enter Question
+               ↓
+       Validate Question
+               ↓
+         Send to Gemini
+               ↓
+       Generate Response
+               ↓
+      Display AI Response
+               ↓
+   Save Learning Activity
+               ↓
+      Ask Another Question?
+          ↙          ↘
+        YES           NO
+         ↓             ↓
+    Continue         Logout
+                       ↓
+                      END
+
+
+---
+
+13. Expected Output
+
+The final EduGenie system should provide students with:
+
+🤖 AI-based question answering
+
+📚 Simple topic explanations
+
+📝 Automatic notes and summaries
+
+🧠 AI-generated quizzes
+
+📊 Learning progress tracking
+
+🔄 Interactive follow-up questions
+
+🎓 Personalized learning assistance
+
+
+
+---
+
+14. Conclusion
+
+The Design Phase of EduGenie provides the technical blueprint for developing the Google Gemini-powered learning assistant. It defines the system architecture, modules, user interface, database structure, data flow, technology stack, security, and overall workflow. This design serves as the foundation for the next phase, where the actual development and implementation of EduGenie can begin.
