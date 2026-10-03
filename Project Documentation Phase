@@ -1,1 +1,192 @@
 Project Documentation Phase
+EduGenie: Google Gemini Powered Learning Assistant
+
+Project Documentation Phase
+
+1. Introduction
+
+EduGenie is an AI-powered learning assistant designed to help students learn more effectively. It uses Google Gemini to provide explanations, answer questions, summarize topics, generate study materials, and support students with their academic work.
+
+The documentation phase records all important information about the project, including its objectives, requirements, design, development, testing, and future improvements.
+
+2. Objectives
+
+To develop an intelligent learning assistant for students.
+
+To provide quick and understandable answers to academic questions.
+
+To simplify difficult concepts using AI-generated explanations.
+
+To generate summaries and study materials.
+
+To provide an interactive and user-friendly learning experience.
+
+To reduce the time required to search for educational information.
+
+
+3. Technologies Used
+
+Component	Technology
+
+AI Model	Google Gemini
+Frontend	HTML, CSS, JavaScript
+Backend	Python / Flask
+API	Gemini API
+Database	SQLite / MySQL
+Development Tool	VS Code
+Version Control	GitHub
+
+
+4. System Requirements
+
+Hardware Requirements
+
+Computer/Laptop
+
+Minimum 4 GB RAM
+
+Internet connection
+
+Basic processor such as Intel i3 or equivalent
+
+
+Software Requirements
+
+Windows/Linux/macOS
+
+Python
+
+VS Code
+
+Web browser
+
+Gemini API access
+
+Git and GitHub
+
+
+5. Main Features
+
+1. AI Chat Assistant – Students can ask academic questions.
+
+
+2. Concept Explanation – Explains difficult topics in simple language.
+
+
+3. Summarization – Converts lengthy content into short notes.
+
+
+4. Question Answering – Provides answers to educational queries.
+
+
+5. Study Material Generation – Creates notes and learning content.
+
+
+6. Interactive Learning – Allows students to interact with the AI assistant.
+
+
+7. User-Friendly Interface – Simple interface suitable for students.
+
+
+
+6. System Workflow
+
+Student → EduGenie Interface → Backend → Gemini API → AI Processing → Response → Student
+
+The student enters a question through the EduGenie interface. The backend sends the request to the Gemini API. Gemini processes the question and generates a response, which is then displayed to the student.
+
+7. Database Documentation
+
+If a database is used, it can store information such as:
+
+User ID
+
+User name
+
+Email
+
+Questions asked
+
+AI responses
+
+Date and time of interaction
+
+
+8. Testing Documentation
+
+The system is tested to verify that:
+
+The application loads correctly.
+
+User questions are received properly.
+
+Gemini API requests work correctly.
+
+Relevant responses are displayed.
+
+Invalid or empty inputs are handled.
+
+The interface works correctly on different screen sizes.
+
+Errors are handled without crashing the application.
+
+
+9. Test Case Example
+
+Test Case	Input	Expected Result	Status
+
+TC01	Valid question	AI provides answer	Pass
+TC02	Empty input	Error/message displayed	Pass
+TC03	Simple academic question	Relevant explanation	Pass
+TC04	Summary request	Short summary generated	Pass
+TC05	Invalid API request	Error handled properly	Pass
+
+
+10. Advantages
+
+Easy access to learning assistance.
+
+Provides quick responses.
+
+Makes difficult topics easier to understand.
+
+Saves students' study time.
+
+Supports personalized learning.
+
+Available anytime with an internet connection.
+
+
+11. Limitations
+
+Requires internet connectivity.
+
+AI responses may sometimes contain incorrect information.
+
+Gemini API usage may have limitations.
+
+The quality of responses depends on the user's question.
+
+
+12. Future Enhancements
+
+Voice-based learning assistance.
+
+Multilingual support.
+
+Personalized learning plans.
+
+Quiz and MCQ generation.
+
+Progress tracking.
+
+PDF/document-based question answering.
+
+Student performance analysis.
+
+Mobile application.
+
+
+13. Conclusion
+
+EduGenie: Google Gemini Powered Learning Assistant demonstrates how generative AI can be used to improve the learning experience. The project provides students with an interactive platform for asking questions, understanding concepts, creating study materials, and learning efficiently. Proper documentation ensures that the system's requirements, development process, testing results, and future scope are clearly recorded for maintenance and further development.
